@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>ITIL 4 Mock Exams – Papers 12 &amp; 13</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#f6f7fb;--card:#fff;--tx:#1b1f2a;--mut:#667;--bd:#d8dce6;--ac:#3b5bdb;--ok:#2b8a3e;--okb:#e6f6ea;--no:#c92a2a;--nob:#fdeaea}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14161c;--card:#1d2029;--tx:#e8eaf0;--mut:#9aa;--bd:#343949;--ac:#7b93ff;--ok:#6fd286;--okb:#1b3324;--no:#ff8787;--nob:#3a1e1e}}
+:root[data-theme="dark"]{--bg:#14161c;--card:#1d2029;--tx:#e8eaf0;--mut:#9aa;--bd:#343949;--ac:#7b93ff;--ok:#6fd286;--okb:#1b3324;--no:#ff8787;--nob:#3a1e1e}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:16px}
+h1{font-size:1.4rem;margin:8px 0}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);padding:8px 0;z-index:2;display:flex;justify-content:space-between;align-items:center;font-size:.9rem;color:var(--mut);border-bottom:1px solid var(--bd)}
+.q{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:14px;margin:14px 0}
+.q.bad{border-color:var(--no)}.q.good{border-color:var(--ok)}
+.q p{margin:0 0 10px;font-weight:600}
+label{display:block;padding:9px 12px;margin:6px 0;border:1px solid var(--bd);border-radius:8px;cursor:pointer}
+label:hover{border-color:var(--ac)}
+label.sel{border-color:var(--ac);background:color-mix(in srgb,var(--ac) 12%,transparent)}
+label.right{border-color:var(--ok);background:var(--okb)}
+label.wrong{border-color:var(--no);background:var(--nob)}
+input{margin-right:8px}
+.fb{font-size:.9rem;margin-top:8px}
+button{background:var(--ac);color:#fff;border:0;border-radius:8px;padding:10px 18px;font-size:1rem;cursor:pointer;margin:4px 6px 4px 0}
+button.sec{background:transparent;color:var(--ac);border:1px solid var(--ac)}
+#res{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:16px;margin:14px 0;display:none}
+#res .big{font-size:2rem;font-weight:700}
+#res a{color:var(--no);cursor:pointer;margin-right:8px;display:inline-block}
+.note{font-size:.8rem;color:var(--mut)}
+.nav{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}.nav button{flex:1 1 90px;margin:0;padding:10px 6px}.nav button:not(.on){background:transparent;color:var(--ac);border:1px solid var(--ac)}
+.em{display:block;width:100%;box-sizing:border-box;padding:10px;margin:6px 0 10px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx);font-size:1rem}
+a.btn{display:inline-block;background:var(--ac);color:#fff!important;padding:10px 18px;border-radius:8px;text-decoration:none;margin:4px 6px 4px 0}
+details{border-top:1px solid var(--bd);padding:6px 0;font-size:.9rem}
+</style></head><body><main>
+<h1>ITIL 4 Mock Exams – Papers 12 &amp; 13</h1>
+<div class="nav" id="nav"><button data-p="12">Paper 12</button><button data-p="13">Paper 13</button></div>
+<div class="q" id="gate"><p id="gt"></p>
+<label style="cursor:default">Email to receive the result<input class="em" id="em" type="email" placeholder="xyz@gmail.com"></label>
+<button id="start">Start test</button><button class="sec" id="hb">Previous attempts</button>
+<div id="hist" style="display:none;margin-top:10px"></div></div>
+<div id="test" style="display:none">
+<div class="bar"><span id="prog"></span><span id="pm"></span></div>
+<div id="res"></div><div id="qs"></div>
+<button id="sub">Submit &amp; see score</button><button class="sec" id="rst">Reset</button></div>
+<p class="note">Papers 12–13 use your supplied answer keys with options in original order. Pass mark is 65% (26 / 40).</p>
+</main>
+<script>
+const T12=`What is an arrangement of configuration items (CIs) or other resources that work together to deliver a product or service?|Configuration;Formation;CMS;CMDB|A
+What is a measure of whether the objectives of a practice, service or activity have been achieved?|Effectiveness;Efficiency;Cost saving;Objectives definition|A
+What is the maximum acceptable period of time following a service disruption that can elapse before the lack of business functionality severely impacts the organization?|RPO;RTO;BIA;Disaster recovery plan|B
+Which practice is done to ensure that the availability and performance of a service are maintained at sufficient levels in case of a disaster?|Disaster recovery service;Business continuity management;Service continuity management;Continuity management|C
+Which practice is done to capture demand for incident resolution and service requests?|Help desk management;Service desk;IT management;Incident management|B
+What is a measure of whether the right amount of resources have been used by a practice, service, or activity?|Effectiveness;Efficiency;Cost saving;Objectives|B
+What is a flaw or vulnerability that may cause incidents?|Hole;Incorrect application usage;Break;Error|D
+What is the policy that governs an organization’s approach to information security management?|Security policy;Information security policy;Organization security policy;Security management policy|B
+All of the hardware, software, networks, and facilities that are required to develop, test, deliver, monitor, manage, and support IT services are called?|IT components;IT equipment;IT assets;IT infrastructure|D
+What is an important metric used to evaluate the success in meeting an objective?|Key metric indicator;Performance indicator;Key performance indicator;Key achievement indicator|C
+What is an approach that focuses on improving workflows by maximizing value through the elimination of waste?|Waterfall;Project management;Lean;Spiral|C
+What is known as the full set of stages, transitions, and associated statuses in the life of a service, product, practice, or other entity?|Service cycle;Lifecycle;Service circle;Circle|B
+What is known as the ease with which a service or other entity can be repaired or modified?|Maintainability;Changeability;Configuration;Setting|A
+What is a product with just enough features to satisfy early customers, and to provide feedback for future product development?|Minimum usable product;Minimum viable product;Least viable product;Least usable product|B
+What is known as the routine running and management of an activity, product, service, or other configuration item?|Organization task;Organization calendar;Continuous activities;Operation|D
+What is known as the ability of an organization to anticipate, prepare for, respond to, and adapt to unplanned external influences?|Organizational plans;Organizational resilience;Organizational willingness;Organizational plans|B
+What is a set of tools, data, and information that is used to support service configuration management?|Configuration management system;IT system management;Server management system;CI management system|A
+What is known as a test implementation of a service with a limited scope in a live environment?|Test run;Demo;Prototype;Pilot|D
+What is a cooperation between a service provider and service consumer?|Service provision;Service usage;Service relationship;Service management|C
+Which practice is done to ensure that the organization’s suppliers and their performances are managed appropriately to support the seamless provision of quality products and services?|Vendor management;Supplier management;Outsource management;Relationship management|B
+What is the name of the type of relationship between an organization and its supplier where external suppliers provide products and services that were previously provided internally?|Insourcing;Outsourcing;Single source;Multi-sourcing|B
+Which practice is done to maximize the number of successful service and product changes by ensuring that risks have been properly assessed, authorizing changes to proceed, and managing the change schedule?|Adjustment control;Service change management;Service control;Change enablement|D
+What is defined as the addition, modification, or removal of anything that could have a direct or indirect effect on services?|Service modification;Service request;Service adjustment;Service change|D
+_______________ practice may also be involved in positioning components to other environments for testing or staging.|Change enablement;Incident management;Service desk;Deployment management|D
+What is a change that must be implemented as soon as possible?|Non-standard change;Emergency change;Quick change;Fast change|B
+What is an unplanned interruption to a service or reduction in the quality of a service?|Change;Problem;Incident;Error|C
+Every incident should be?|Reported to management;Escalated to higher support;Analyzed for problems;Logged and managed to ensure that it is resolved in a time that meets the expectations of the customer and user.|D
+What practice is done to plan and manage the full lifecycle of all IT assets?|IT asset control;IT asset system;IT asset management;Asset management|C
+What is any financially valuable component that can contribute to the delivery of an IT product or service?|IT asset;Technology;Service;Software|A
+What step in the ITIL continual improvement model provides context for all subsequent decisions and links individual actions to the organization’s vision for the future?|What is the vision?;Where do we want to be?;How to measure the progress?;Take action?|A
+After you have determined where are we now, what should you do next?|Determine where do we want to be;Determine how to get there;Determine how to keep it going;Determine how to take action|A
+In what step would you set up KPIs?|What is the vision?;Where do we want to be?;How to measure the progress?;Take action?|B
+What management practice is done for planning and implementing improvements?|Continual improvement;Information security management;Relationship management;Supplier management|A
+To track and manage improvement ideas from identification through to final action, organizations use a database or structured document called a?|Continual improvement list;Continual improvement document;Continual improvement spreadsheet;Continual improvement register|D
+Which practice is done to protect the information needed by the organization to conduct its business?|Security management;Information security management;Asset protection management;Information management|B
+Which practice is done to establish and nurture the links between the organization and its stakeholders at strategic and tactical levels?|Vendor management;Supplier management;Relationship management;Customer management|C
+Where should information about the assets, their costs, and related contracts be stored?|IT asset list;IT asset database;IT asset register;IT asset catalog|C
+What is any change of state that has significance for the management of a service or other configuration item (CI) called?|Problem;Incident;Action;Event|D
+What is it called when new or changed software is made available in a controlled repository, and users download the software to client devices when they choose?|Phased deployment;Continuous delivery;Big bang deployment;Pull deployment|D
+What practice allows an organization to meet regulatory and contractual requirements concerning IT assets?|IT asset management;Deployment management;Incident management;Relationship management|A`;
+const T13=`What is the purpose of the SVS?|To ensure the organization manages its resources correctly;To ensure that the organization continually co-creates value with all stakeholders through the use and management of products and services;To ensure it meets customer’s needs;To create value for itself|B
+What would knowledge bases, inventory systems, and communication systems be considered on the four dimensions model?|Information and technology;Value streams and processes;Partners and suppliers;People and organization|A
+What are some of the challenges of information management?|Blockchain and artificial intelligence;Cognitive computing;Security and compliance;Databases|C
+What is a question an organization should ask when working in information and technology?|How much does the technology cost?;Does the technology introduce new risk or constraints to the organization?;How will the information and technology sell?;What are the customer’s technological needs?|B
+What can have a significant impact on the technology a company chooses?|Time needed;Culture;Risk;Scope|B
+What can be defined as a model for enabling on-demand network access to a shared pool of configurable computing resources that can be rapidly provided with minimal management effort or provider interactions?|Cloud computing;On-demand computing;External computing;Outsource computing|A
+What dimension encompasses an organization’s relationships with other organizations to provide services?|Information and technology;Partners and vendors;Partners and suppliers;Suppliers and vendors|C
+What are some factors that influence an organization’s strategy when using suppliers? 1. Strategic focus / 2. Corporate culture / 3. Cost concerns / 4. Internal technology usage|1 and 2;1 and 3;1, 2, and 3;All of the above|C
+Which dimension is concerned with how the various parts of the organization work in an integrated and coordinated way to enable value creation through products and services?|Information and technology;Value streams and processes;Partners and suppliers;People and organization|B
+What does the value streams and processes dimension focus on?|What activities the organization undertakes and how they are organized;What processes the organization uses to manage technology;What activities are used to manage suppliers;What activities are used to create services|A
+Which of the following are steps in the ITIL continual improvement model? 1. What is the vision? / 2. Where do we want to be? / 3. How to measure the progress? / 4. Take action?|1 and 2 only;1 and 3 only;1, 2 and 4 only;All of the above|C
+What is defined as a set of activities that transform inputs to outputs?|Service;Process;Procedure;Activity|B
+Which of the following is an ITIL guiding principle?|Focus on customer needs;Focus on cost;Focus on value;Focus on risk|C
+What does the S in the PESTLE framework mean?|Service;Sector;Set;Social|D
+What describes how all the components and activities of the organization work together as a system to enable value creation?|Service value system (SVS);Service variations system (SVS);Service verification system (SVS);Service system (SS)|A
+Which of the following are components of the SVS? 1. Guiding principles / 2. Governance / 3. Service value chain / 4. Practices|1 and 2 only;2 only;1, 2, and 3;All of the above|D
+What is one of the biggest challenges an organization can face when trying to work effectively and efficiently with a shared vision?|Organizational silos;Organizational risk;Organizational culture;Organizational cost|A
+Which practice is to reduce the likelihood and impact of incidents by identifying actual and potential causes of incidents, and managing workarounds and known errors?|Event management;Incident management;Problem management;Event and problem management|C
+What represents options or possibilities to add value for stakeholders or otherwise improve the organization?|Opportunity;Demand;Customer;Service|A
+What is a recommendation that guides an organization in all circumstances, regardless of changes in its goals, strategies, type of work, or management structure?|Guiding service;Guiding principle;Service principle;Manage principle|B
+What should you do if a process, service, action or metric fails to provide value or produce a useful outcome?|Fix it;Eliminate it;Redo it;Improve it|B
+What method, when applied to software development, focuses on the delivery of incremental changes to software products while responding to the changing (or evolving) needs of users?|Waterfall method;Change method;Incremental method;Agile method|D
+What is usually detailed in a process?|Services;Events;Procedures;Actions|C
+What method emphasizes close collaboration between the roles of software development and technical operations?|Agile method;Change method;DevOps method;Waterfall method|C
+Which service value chain activity is done to ensure that products and services continually meet stakeholder expectations for quality, costs, and time to market?|Engage;Design;Plan;Design and transition|D
+The ITIL continual improvement model has ______ steps?|4;5;6;7|D
+What can be defined as a series of steps an organization undertakes to create and deliver products and services to consumers?|Value maps;Process maps;Process stream;Value stream|D
+What events do not require action at the time they are identified?|Informational;Logging;Status;Error|A
+What is a cause, or potential cause, of one or more incidents?|Event;Problem;Known error;Error|B
+What is a problem that has been analyzed but has not been resolved?|Unresolved issue;Known error;User error;Unresolved incidents|B
+What is a solution that reduces or eliminates the impact of an incident or problem for which a full resolution is not yet available?|Risk reduction;Workaround;Temporary solution;Provisional solution|B
+What should be defined by the organization for each of their products and services?|Value maps;Process maps;Process stream;Value stream|D
+What is a version of a service or other configuration item, or a collection of configuration items, that is made available for use?|Event;Update;Fix;Release|D
+Which practice is done to make new and changed services and features available for use?|Problem management;Release management;Update management;Service update management|B
+What in the service value chain is done to provide a good understanding of stakeholder needs, transparency, and continual engagement and good relationships with all stakeholders?|Improve;Engage;Design;Deliver and support|B
+What is any component that needs to be managed in order to deliver an IT service?|Configuration component;Configuration item;Configuration system;Technology configuration|B
+Which ITIL guiding principle recommends using existing services, processes and tools while improving services?|Progress iteratively with feedback;Keep it simple and practical;Start where you are;Optimize and automate|C
+Which practice ensures that risks have been properly assessed?|Service configuration management;Continual improvement;Incident management;Change enablement|D
+What represents the need or desire for products and services from internal and external customers?|Opportunity;Demand;Customer;Service|B
+What includes identification of potential permanent solutions which may result in a change request for implementation of a solution, but only if this can be justified in terms of cost, risks, and benefits?|Error control;User control;Problem control;Fix management|A`;
+function decodeFixed(t){return t.split("\n").map(l=>{const[q,o,a]=l.split("|");return[q,o.split(";"),a.charCodeAt(0)-65]})}
+const PAPERS={12:{n:"Paper 12: ITIL 4 Foundation Practice Set E",qs:decodeFixed(T12)},13:{n:"Paper 13: ITIL 4 Foundation Practice Set F",qs:decodeFixed(T13)}};
+const L="ABCD",$=s=>document.querySelector(s),mem={};
+const pass=n=>Math.ceil(n*.65);
+const sg=k=>{try{const v=localStorage.getItem(k);if(v!==null)return v}catch(e){}return mem[k]??null};
+const ss=(k,v)=>{mem[k]=v;try{localStorage.setItem(k,v)}catch(e){}};
+const hist=p=>{try{return JSON.parse(sg('itil_h'+p)||'[]')}catch(e){return[]}};
+let paper=12,ans={},done=false,email="";
+function histRender(){const h=hist(paper).slice().reverse(),qs=PAPERS[paper].qs;
+ $('#hist').innerHTML=h.length?h.map(a=>`<details><summary>${a.t} — <b>${a.s}/${qs.length}</b> (${a.w.length} wrong)</summary>`+(a.w.length?a.w.map(([i,y])=>`<div>Q${i+1}: ${y<0?'skipped':'you '+L[y]}, correct ${L[qs[i][2]]}</div>`).join(''):'Perfect score')+`</details>`).join(''):'<p class="note">No previous attempts for this paper yet.</p>';}
+function show(p,open){paper=p;done=false;ans={};
+ document.querySelectorAll('#nav button').forEach(b=>b.classList.toggle('on',+b.dataset.p==p));
+ $('#gate').style.display='block';$('#test').style.display='none';
+ $('#gt').textContent=PAPERS[p].n+' · '+PAPERS[p].qs.length+' questions';
+ $('#em').value=sg('itil_email')||'';histRender();$('#hist').style.display=open?'block':'none';window.scrollTo(0,0);}
+function render(){done=false;for(const k in ans)delete ans[k];$('#res').style.display='none';$('#sub').disabled=false;
+ const qs=PAPERS[paper].qs,n=qs.length;
+ $('#prog').textContent=`Answered 0 / ${n}`;$('#pm').textContent=`Pass mark: ${pass(n)} / ${n} (65%)`;
+ $('#qs').innerHTML=qs.map((q,i)=>`<div class="q" id="q${i}"><p>${i+1}. ${q[0]}</p>`+q[1].map((o,j)=>`<label id="l${i}_${j}"><input type="radio" name="q${i}" value="${j}">${L[j]}. ${o}</label>`).join('')+`<div class="fb"></div></div>`).join('');
+ document.querySelectorAll('#qs input').forEach(r=>r.onchange=()=>{
+  if(done)return;const i=+r.name.slice(1);ans[i]=+r.value;
+  qs[i][1].forEach((_,j)=>$('#l'+i+'_'+j).classList.toggle('sel',j==ans[i]));
+  $('#prog').textContent=`Answered ${Object.keys(ans).length} / ${n}`;});
+}
+document.querySelectorAll('#nav button').forEach(b=>b.onclick=()=>show(+b.dataset.p));
+$('#hb').onclick=()=>{const h=$('#hist');h.style.display=h.style.display=='none'?'block':'none'};
+$('#start').onclick=()=>{const e=$('#em').value.trim();
+ if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e)){alert('Please enter a valid email address.');return}
+ email=e;ss('itil_email',e);$('#gate').style.display='none';$('#test').style.display='block';render();window.scrollTo(0,0)};
+$('#sub').onclick=()=>{
+ const qs=PAPERS[paper].qs,n=qs.length,pm=pass(n),un=qs.map((_,i)=>i).filter(i=>!(i in ans));
+ if(un.length&&!confirm(un.length+' question(s) unanswered (counted as wrong). Submit anyway?'))return;
+ done=true;$('#sub').disabled=true;let s=0,wrong=[];
+ qs.forEach((q,i)=>{
+  const ok=ans[i]===q[2];if(ok)s++;else wrong.push(i);
+  const box=$('#q'+i);box.classList.add(ok?'good':'bad');
+  q[1].forEach((_,j)=>{const l=$('#l'+i+'_'+j);l.classList.remove('sel');l.querySelector('input').disabled=true;
+   if(j==q[2])l.classList.add('right');else if(j==ans[i])l.classList.add('wrong');});
+  box.querySelector('.fb').innerHTML=ok?`<span style="color:var(--ok)">✔ Correct</span>`:`<span style="color:var(--no)">✘ ${i in ans?'Your answer: '+L[ans[i]]:'Not answered'} — Correct answer: ${L[q[2]]}</span>`;
+ });
+ const h=hist(paper);h.push({t:new Date().toLocaleString(),s,w:wrong.map(i=>[i,i in ans?ans[i]:-1])});ss('itil_h'+paper,JSON.stringify(h.slice(-20)));
+ const pct=Math.round(s/n*100),verdict=s>=pm?'Pass':'Below pass mark';
+ const body=`ITIL 4 – ${PAPERS[paper].n}\nScore: ${s}/${n} (${pct}%) – ${verdict}\nWrong: ${wrong.length}\n\n`+wrong.map(i=>`Q${i+1}: ${i in ans?'your '+L[ans[i]]:'skipped'}, correct ${L[qs[i][2]]}`).join('\n');
+ const href=`mailto:${encodeURIComponent(email)}?subject=${encodeURIComponent('ITIL 4 '+PAPERS[paper].n+' result: '+s+'/'+n)}&body=${encodeURIComponent(body)}`;
+ const r=$('#res');r.style.display='block';
+ r.innerHTML=`<div class="big">${s} / ${n} (${pct}%)</div><div>${s>=pm?'🎉 Pass':'Below pass mark ('+pm+')'} · ${wrong.length} wrong</div>`+
+  (wrong.length?`<p><b>Wrong questions (tap to jump):</b><br>${wrong.map(i=>`<a onclick="document.getElementById('q${i}').scrollIntoView({behavior:'smooth'})">Q${i+1}</a>`).join('')}</p>`:'<p>Perfect score!</p>')+
+  `<a class="btn" href="${href}" target="_blank" rel="noopener">✉ Email result to ${email}</a><button class="sec" onclick="show(paper,true)">Previous attempts</button>`;
+ window.scrollTo({top:0,behavior:'smooth'});
+};
+$('#rst').onclick=()=>{render();window.scrollTo(0,0)};
+show(12);
+</script></body></html>
